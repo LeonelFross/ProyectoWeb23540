@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+
+}
+
+.logo img {
+    width: 100px;
+}
+
+.encabezado {
+
+    display: flex;
+    align-items:center;
+
+    
+}
+
+.header-nav {
+    background-color: #053743;
+    display: flex;
+    align-items :center;
+    justify-content:space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu {
+    
+    /* ver forma de separarlo del borde derecho de mejor forma o que quede centrado*/
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 010px;
+}

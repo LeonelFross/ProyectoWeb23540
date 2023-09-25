@@ -1,0 +1,146 @@
+
+.body {
+  margin:0;
+}
+
+.articulo-ppal {
+  max-width: 100%;
+  height: auto;
+  margin: 5%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*padding: 20px; */
+  /* border-radius: 20px; */
+   
+
+}
+
+
+
+/* Imagen izquierda, texto derecho */
+
+@keyframes slideInLeftToRight {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.imagenes-texto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Crea tres columnas de igual ancho */
+    gap: 5px; 
+    background-color: white;
+    
+}
+
+.image-1 img{
+    /* width: 400px;
+    height: 300px; */
+    max-width: 80%;
+    height: auto;
+    margin: 10%;
+    /*padding: 20px; */
+    /* border-radius: 20px; */
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.944);
+    transition: opacity 0.3s ease;
+    
+    
+}
+
+.text-1 {
+    display: flex;
+    margin: 10%;
+    /* padding: 10px; */
+    text-align: center;
+    justify-content:center ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    height: 80%;
+    max-width: 90%;
+    animation: slideInLeftToRight 1s ease;
+}
+
+.image-1:hover img,
+.text-1:hover {
+    opacity: 0.7; /* Cambiar la opacidad al pasar el mouse sobre ellos */
+}
+
+
+/* Imagen derecha texto izquierdo */
+
+
+/* Seguir codeando lo que falta */
+
+
+/* 
+3 imagenes distribuidas a lo largo de la pagina */
+
+.imagenes-horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual ancho */
+    gap: 10px; /* Espacio entre las imágenes y el texto */
+    max-width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+  
+
+  }
+
+  .imagenes-horizontal img {
+    max-width: 90%; /* Asegura que las imágenes no se desborden de sus contenedores */
+    height: auto; /* Mantiene la relación de aspecto de las imágenes */
+    margin: 10px;
+    /*padding: 10px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.944);
+    border-radius: 10px;
+    
+  }
+
+  .imagenes-horizontal p {
+    /* margin: 10px; */
+    padding: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 90%;
+    
+  }
+
+
+
+ /* Card contenedoras de eventos */
+
+ /* Estilos generales para la tarjeta */
+.card-conteiner {
+	display:flex;
+	justify-content:center;
+	gap:10px;
+  margin-left: 3%;
+  margin-right: 5%;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 12%; /* Ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centrar la tarjeta horizontalmente */
+   
+}
+
+/* Estilos para el título de la tarjeta */
+.card-title {
+    font-size: 1.5em;
+    margin-top: 0; /* Eliminar el margen superior predeterminado del título */
+}
+
+/* Estilos para el texto de la tarjeta */
+.card-text {
+    font-size: 1em;
+    color: #555;
+}
